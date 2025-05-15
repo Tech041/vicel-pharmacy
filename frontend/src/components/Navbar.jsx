@@ -178,7 +178,7 @@ const Navbar = () => {
               <a
                 href="https://vicel-pharmacy-admin.vercel.app"
                 target="_blank"
-                className="text-blue-500 px-6"
+                className="text-blue-500 px-6 py-2"
               >
                 Admin
               </a>
@@ -195,7 +195,7 @@ const Navbar = () => {
                 <div onClick={() => setVisible(false)} className="mt-2 w-full">
                   <button
                     onClick={logout}
-                    className=" w-full bg-red-600 text-white px-3 py-1 rounded-lg"
+                    className=" w-full bg-red-600 text-white px-3 py-1 "
                   >
                     Logout
                   </button>
