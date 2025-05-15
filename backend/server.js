@@ -9,6 +9,10 @@ import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 import subscriptionRouter from "./routes/newsLetterRoute.js";
 
+const allowedOrigins = [
+  "https://localhost:5173",
+  "https://vicel-pharmacy.vercel.app",
+];
 // App config
 const app = express();
 const port = process.env.PORT || 4000;
@@ -18,7 +22,13 @@ connectCloudinary();
 // Middlewares
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 // api endpoints for user
 app.use("/api/user", userRouter);
