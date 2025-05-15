@@ -8,7 +8,7 @@ const ProductItem = ({ id, image, name, price }) => {
 
   return (
     <Link
-      className=" cursor-pointer border-2 border-green-700 shadow-lg rounded-lg overflow-hidden flex  justify-center items-center bg-green-200"
+      className=" cursor-pointer border-2 border-white shadow-lg rounded-lg overflow-hidden flex  justify-center items-center bg-gray-500"
       to={`/product/${id}`}
       onClick={() => scrollTo(0, 0)}
     >
@@ -28,7 +28,7 @@ const ProductItem = ({ id, image, name, price }) => {
             {currency}
             {price}
           </p>
-          <p className="font-semibold text-white px-4 py-2 rounded-lg bg-green-600 hover:bg-green-500 shadow-lg transition duration-300 ease-in-out cursor-pointer">
+          <p className="font-semibold text-white px-4 py-2 rounded-lg bg-orange-600 hover:bg-orange-400 shadow-lg transition duration-300 ease-in-out cursor-pointer">
             Read More
           </p>
         </div>
