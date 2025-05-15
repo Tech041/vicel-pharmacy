@@ -104,22 +104,23 @@ const Product = () => {
         </div>
         {/* -------Description  and review ---------- */}
         <div className="mt-20 ">
-          <div className="flex ">
+          <div className="flex pb-3 ">
             <b className="border  px-5 py-3 text-sm">Description</b>
             <p className="border  px-5 py-3 text-sm">Reviews (122)</p>
           </div>
-          <div className="flex flex-col gap-4 border px-6 text-sm text-gray-500">
+          <div className="flex flex-col gap-4 border px-6 py-4 text-sm text-gray-500 ">
             <p className="">
-              An e-commerce website is an online platform that enables
-              businesses to showcase and sell products or services to customers
-              digitally. It includes features like product catalogs, shopping
-              carts, secure payment gateways, user accounts, and order tracking.
+              Vicel Pharmacy is a modern e-commerce platform designed to provide
+              seamless access to pharmaceutical products and healthcare
+              essentials. Our online store enables customers to conveniently
+              browse, purchase, and receive medications from the comfort of
+              their homes.
             </p>
             <p className="">
               {" "}
-              Designed for accessibility and convenience, e-commerce websites
-              allow seamless transactions and a personalized shopping
-              experience, making them a vital tool for modern businesses.
+              Vicel Pharmacy makes accessing medications easy with a seamless
+              shopping experience, secure payments, and fast delivery. Your
+              health, our priority!
             </p>
           </div>
         </div>
