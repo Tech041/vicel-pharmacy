@@ -117,7 +117,7 @@ const OurCategories = () => {
 
   return (
     <div className="mt-5 ">
-      <h1 className="text-center text-xl font-bold text-orange-600">
+      <h1 className="text-center text-base lg:text-xl font-bold text-orange-600">
         Our Product Categories
       </h1>
       <div className="relative w-full h-[300px] lg:h-[500px] xl:h-[700px] overflow-hidden">
