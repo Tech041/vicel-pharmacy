@@ -39,24 +39,27 @@ const Footer = () => {
           <div className="">
             <p className="text-xl font-medium mb-5  ">Contact Us</p>
             <div className="flex  items-center ">
-              <div className="flex-flex-col ">
-                <div className="flex  items-center gap-2 pb-3">
-                  <span className="w-5">
-                    <FaInstagram size={20} color="red" />
-                  </span>
-                  <span className="text-white">@vicelpharmacy</span>
+              <div className="flex items-center justify-center gap-3 ">
+                <div className="">
+                  <a href="" className="">
+                    <span className="">
+                      <FaFacebookF size={20} color="blue" />
+                    </span>
+                  </a>
                 </div>
-                <div className="flex  items-center gap-2">
-                  <span className="w-5">
-                    <FaWhatsapp size={20} color="green" />
-                  </span>
-                  <span className="">Whatsapp</span>
+                <div className="">
+                  <a href="" className="">
+                    <span className="">
+                      <FaInstagram size={20} color="red" />
+                    </span>
+                  </a>
                 </div>
-                <div className="flex  items-center gap-2 pt-3">
-                  <span className="w-5">
-                    <FaFacebookF size={20} color="blue" />
-                  </span>
-                  <span className="">Vicel Pharmacy</span>
+                <div className="">
+                  <a href="" className="">
+                    <span className="">
+                      <FaWhatsapp size={20} color="green" />
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
