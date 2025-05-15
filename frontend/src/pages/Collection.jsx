@@ -91,7 +91,7 @@ const Collection = () => {
             FILTERS
             <img
               src={assets.dropdown_icon}
-              className={` h-3  sm:hidden ${showFilter ? "rotate-90" : ""}`}
+              className={` h-3  sm:hidden ${showFilter ? "rotate-90 " : ""}`}
               alt=""
             />
           </p>
