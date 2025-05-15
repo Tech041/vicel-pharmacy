@@ -10,7 +10,7 @@ import orderRouter from "./routes/orderRoute.js";
 import subscriptionRouter from "./routes/newsLetterRoute.js";
 
 const allowedOrigins = [
-  "https://localhost:5173",
+  "http://localhost:5173",
   "https://vicel-pharmacy.vercel.app",
 ];
 // App config
