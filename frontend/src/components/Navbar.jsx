@@ -37,7 +37,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-5 font-medium  ">
           <Link to="/" className="flex flex-col justify-center items-center">
             <img src="/vicel_logo.jpg" alt="" className="w-10 h-10 " />
-            <span className="text-[8px] text-green-600">Leading a healthy lifestyle.</span>
+            <span className="text-[8px] text-green-600">
+              Leading a healthy lifestyle.
+            </span>
           </Link>
 
           <ul className="hidden sm:flex gap-5 text-sm text-black font-extrabold">
@@ -60,6 +62,13 @@ const Navbar = () => {
               <p className="hover:text-green-400">CONTACT</p>
               <hr className="w-2/4 border-none h-[2px] bg-green-500 hidden " />
             </NavLink>
+            <a
+              href="https://vicel-pharmacy-admin.vercel.app"
+              target="_blank"
+              className="text-blue-500 px-6"
+            >
+              Admin
+            </a>
           </ul>
           <div className="flex  items-center gap-6">
             {showIcon && (
@@ -165,6 +174,14 @@ const Navbar = () => {
               >
                 Contact
               </NavLink>
+
+              <a
+                href="https://vicel-pharmacy-admin.vercel.app"
+                target="_blank"
+                className="text-blue-500 px-6"
+              >
+                Admin
+              </a>
               {!token && (
                 <NavLink
                   onClick={() => setVisible(false)}

@@ -44,7 +44,7 @@ const Login = ({ setToken }) => {
               type="text"
               className="rounded-md w-full px-3 py-2 border border-x-gray-300 outline-none "
               id="email"
-              placeholder="fashionfix@gmail.com"
+              placeholder="Enter admin email"
               required
             />
           </div>
@@ -61,7 +61,7 @@ const Login = ({ setToken }) => {
               type="password"
               className="rounded-md w-full px-3 py-2 border border-x-gray-300 outline-none "
               id="password"
-              placeholder="Enter your password "
+              placeholder="Enter your admin password "
               required
             />
           </div>

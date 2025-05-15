@@ -12,6 +12,7 @@ import subscriptionRouter from "./routes/newsLetterRoute.js";
 const allowedOrigins = [
   "http://localhost:5173",
   "https://vicel-pharmacy.vercel.app",
+  "https://vicel-pharmacy-admin.vercel.app",
 ];
 // App config
 const app = express();
