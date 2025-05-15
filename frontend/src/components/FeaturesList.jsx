@@ -27,11 +27,11 @@ const FeatureList = () => {
   const items = [
     {
       title: "What is address of Vicel Pharmacy ?",
-      content: "19 Odiyan Street,Lekki, Lagos State,Nigeria.",
+      content: "16 Odiyan Street,Lekki, Lagos State,Nigeria.",
     },
     {
       title: "How can I contact Vicel Pharmacy",
-      content: "Our official email:vicelpharmacy@gmail.com",
+      content: "+234706873027",
     },
     {
       title: "Their availability?",

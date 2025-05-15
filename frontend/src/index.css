@@ -10,6 +10,10 @@ a.active hr {
 * {
   font-family: Outfit;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 .prata-regular {
   font-family: "Prata", serif;
   font-weight: 400;
@@ -17,6 +21,9 @@ a.active hr {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 640px) {

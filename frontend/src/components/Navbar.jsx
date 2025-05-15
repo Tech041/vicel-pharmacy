@@ -35,8 +35,9 @@ const Navbar = () => {
     <nav className="bg-gray-50">
       <Container>
         <div className="flex items-center justify-between py-5 font-medium  ">
-          <Link to="/">
+          <Link to="/" className="flex flex-col justify-center items-center">
             <img src="/vicel_logo.jpg" alt="" className="w-10 h-10 " />
+            <span className="text-[8px] text-green-600">Leading a healthy lifestyle.</span>
           </Link>
 
           <ul className="hidden sm:flex gap-5 text-sm text-black font-extrabold">

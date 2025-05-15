@@ -7,7 +7,7 @@ const HeroCard = ({caption,action,className,className1,className2}) => {
         <h1 className={className1}>{caption}</h1>
         <p className="flex items-center gap-2">
           <span className={className2}>{action}</span>{" "}
-          <span className=" bg-white  p-3 rounded-full">
+          <span className=" bg-white  hover:cursor-pointer p-3 rounded-full">
             <FaArrowRight size={12} />
           </span>
         </p>

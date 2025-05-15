@@ -11,7 +11,7 @@ const Services = () => {
           caption={"Speak to a Pharmacist"}
           action={"Get on a call"}
           className={
-            "w-full flex items-center justify-center h-[200px] lg:h-[400px] bg-[url('/pharm.jpeg')] text-xs lg:text-base  bg-cover bg-center rounded-2xl overflow-hidden"
+            "w-full flex items-center justify-center hover:scale-110 transition ease-in-out h-[200px] lg:h-[400px] bg-[url('/pharm.jpeg')] text-xs lg:text-base  bg-cover bg-center rounded-2xl overflow-hidden"
           }
           className1={"font-bold  text-gray-600"}
           className2={" font-semibold text-red-800"}
@@ -20,7 +20,7 @@ const Services = () => {
           caption={"Get Loyalty Card"}
           action={"Order Now"}
           className={
-            "w-full flex items-center justify-center h-[200px] lg:h-[400px] text-xs lg:text-base bg-[url('/loyal_card.jpeg')] bg-cover bg-center rounded-2xl overflow-hidden"
+            "w-full flex items-center justify-center hover:scale-110 transition ease-in-out h-[200px] lg:h-[400px] text-xs lg:text-base bg-[url('/loyal_card.jpeg')] bg-cover bg-center rounded-2xl overflow-hidden"
           }
           className1={"font-bold  text-white"}
           className2={" font-semibold text-white "}
@@ -29,7 +29,7 @@ const Services = () => {
           caption={"Book a lab test"}
           action={"Book Now"}
           className={
-            "w-full flex items-center justify-center h-[200px] lg:h-[400px] text-xs lg:text-base bg-[url('/lab_test.jpeg')] bg-cover bg-center rounded-2xl overflow-hidden"
+            "w-full flex items-center justify-center hover:scale-110 transition ease-in-out h-[200px] lg:h-[400px] text-xs lg:text-base bg-[url('/lab_test.jpeg')] bg-cover bg-center rounded-2xl overflow-hidden"
           }
           className1={"font-bold  text-slate-800"}
           className2={" font-semibold text-red-800"}
@@ -38,7 +38,7 @@ const Services = () => {
           caption={"Book Vaccination"}
           action={"Book Now"}
           className={
-            "w-full flex items-center justify-center h-[200px] lg:h-[400px] text-xs lg:text-base bg-[url('/vaccination.jpeg')] bg-cover bg-center rounded-2xl overflow-hidden"
+            "w-full flex items-center justify-center hover:scale-110 transition ease-in-out h-[200px] lg:h-[400px] text-xs lg:text-base bg-[url('/vaccination.jpeg')] bg-cover bg-center rounded-2xl overflow-hidden"
           }
           className1={"font-bold  text-slate-800"}
           className2={" font-semibold text-red-800"}
