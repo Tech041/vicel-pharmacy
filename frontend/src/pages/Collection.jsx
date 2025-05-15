@@ -105,25 +105,16 @@ const Collection = () => {
               CATEGORIES
             </p>
             <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
-              <p className="flex gap-2 text-purple-700">
+              <p className="flex gap-2 text-green-700">
                 <input
                   type="checkbox"
                   className="w-3"
-                  value="Men"
+                  value="Men/Women"
                   onChange={toggleCategory}
                 />
-                Men
+                Men/Women
               </p>
-              <p className="flex gap-2 text-purple-700">
-                <input
-                  type="checkbox"
-                  className="w-3"
-                  value="Women"
-                  onChange={toggleCategory}
-                />
-                Women
-              </p>{" "}
-              <p className="flex gap-2 text-purple-700">
+              <p className="flex gap-2 text-green-700">
                 <input
                   type="checkbox"
                   className="w-3"
@@ -131,6 +122,15 @@ const Collection = () => {
                   onChange={toggleCategory}
                 />
                 Kids
+              </p>{" "}
+              <p className="flex gap-2 text-green-700">
+                <input
+                  type="checkbox"
+                  className="w-3"
+                  value="Others"
+                  onChange={toggleCategory}
+                />
+                Others
               </p>
             </div>
           </div>
@@ -140,7 +140,7 @@ const Collection = () => {
               showFilter ? "" : "hidden"
             } sm:block `}
           >
-            <p className="mb-3 text-sm text-green-950 font-medium">
+            <p className="mb-3 text-sm text-orange-500 font-medium">
               Subcategory
             </p>
             <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
@@ -148,28 +148,28 @@ const Collection = () => {
                 <input
                   type="checkbox"
                   className="w-3"
-                  value="Multivitamin"
+                  value="Drugs"
                   onChange={toggleSubCategory}
                 />{" "}
-                Multivitamin
+                Drugs
               </p>
               <p className="flex gap-2 text-orange-600">
                 <input
                   type="checkbox"
                   className="w-3"
-                  value="Beauty"
+                  value="Supplements"
                   onChange={toggleSubCategory}
                 />
-                Beauty
+                Supplements
               </p>{" "}
               <p className="flex gap-2 text-orange-600">
                 <input
                   type="checkbox"
                   className="w-3"
-                  value="Heart/Brain"
+                  value="Others"
                   onChange={toggleSubCategory}
                 />
-                Heart/Brain
+                Others
               </p>
             </div>
           </div>

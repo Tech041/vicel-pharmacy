@@ -22,6 +22,7 @@ const SubscribedUsers = ({ token }) => {
   }, []);
   return (
     <div>
+      <h1>Subscribers:</h1>
       {subscribed?.map((user, index) => (
         <div key={user._id} className="py-2">
           <span className="px-3 text-blue-700">{index + 1}</span> {user.email}

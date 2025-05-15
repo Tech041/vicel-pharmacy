@@ -16,8 +16,8 @@ const Add = ({ token }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("Men");
-  const [subCategory, setSubCategory] = useState("Multivitamin");
+  const [category, setCategory] = useState("Men/Women");
+  const [subCategory, setSubCategory] = useState("Drugs");
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
 
@@ -159,9 +159,9 @@ const Add = ({ token }) => {
             onChange={(e) => setCategory(e.target.value)}
             className=" w-full px-3 py-2"
           >
-            <option value="Men">Men</option>
-            <option value="Women">Women</option>
+            <option value="Men/Women">Men/Women</option>
             <option value="Kids">Kids</option>
+            <option value="Others">Others</option>
           </select>
         </div>
         <div className="">
@@ -175,9 +175,9 @@ const Add = ({ token }) => {
             onChange={(e) => setSubCategory(e.target.value)}
             className=" w-full px-3 py-2"
           >
-            <option value="Multivitamin">Multivitamin</option>
-            <option value="Beauty">Beauty</option>
-            <option value="Heart/Brain">Heart/Brain</option>
+            <option value="Drugs">Drugs</option>
+            <option value="Supplements">Supplements</option>
+            <option value="Others">Others</option>
           </select>
         </div>
         <div className="">
