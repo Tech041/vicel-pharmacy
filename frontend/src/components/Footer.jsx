@@ -41,21 +41,25 @@ const Footer = () => {
             <div className="flex  items-center ">
               <div className="flex items-center justify-center gap-3 ">
                 <div className="">
-                  <a href="" className="">
+                  <a
+                    href="https://www.facebook.com/share/1Dfx7wUz2t/?mibextid=wwXIfr"
+                    target="_blank"
+                    className=""
+                  >
                     <span className="">
                       <FaFacebookF size={20} color="blue" />
                     </span>
                   </a>
                 </div>
                 <div className="">
-                  <a href="" className="">
+                  <a href="@vicelpharmacy" target="_blank" className="">
                     <span className="">
                       <FaInstagram size={20} color="red" />
                     </span>
                   </a>
                 </div>
                 <div className="">
-                  <a href="" className="">
+                  <a href="https://wa.link/nylble" target="_blank" className="">
                     <span className="">
                       <FaWhatsapp size={20} color="green" />
                     </span>
