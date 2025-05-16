@@ -52,7 +52,11 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="">
-                  <a href="@vicelpharmacy" target="_blank" className="">
+                  <a
+                    href="https://www.instagram.com/vicelpharmacy?igsh=ejBxaW9uZnA3eTZu&utm_source=qr"
+                    target="_blank"
+                    className=""
+                  >
                     <span className="">
                       <FaInstagram size={20} color="red" />
                     </span>
