@@ -76,7 +76,7 @@ const Collection = () => {
 
   return (
     <Container>
-      <section className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t">
+      <section className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-28 border-t ">
         <SEO
           content="This is collections page of Nelpharma"
           title="Collections Page"

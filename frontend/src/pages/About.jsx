@@ -6,7 +6,7 @@ import Container from "../components/Container";
 const About = () => {
   return (
     <Container>
-      <section className="">
+      <section className="pt-24">
         <SEO
           content="This is about page of Nelpharma"
           title="About Page"

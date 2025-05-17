@@ -7,7 +7,7 @@ import Container from "../components/Container";
 const Contact = () => {
   return (
     <Container>
-      <section>
+      <section className="pt-24">
         <SEO
           content="This is contact page of Nelpharma"
           title="Contact Page"

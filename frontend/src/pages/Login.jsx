@@ -56,7 +56,7 @@ const Login = () => {
   }, [token]);
   return (
     <Container>
-      <section>
+      <section className="pt-24">
         <SEO
           content="This is Register/Login page of Nelpharma"
           title="Register/Login Page"
