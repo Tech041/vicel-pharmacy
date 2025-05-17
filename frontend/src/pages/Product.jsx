@@ -54,7 +54,9 @@ const Product = () => {
           </div>
           {/* -------Product Info------------ */}
           <div className="flex-1">
-            <h1 className="font-medium text-2xl mt-2 text-orange-700">{productData.name}</h1>
+            <h1 className="font-medium text-2xl mt-2 text-orange-700">
+              {productData.name}
+            </h1>
             <div className="flex items-center gap-1 mt-2">
               <img src={assets.star_icon} alt="" className="w-3 5" />
               <img src={assets.star_icon} alt="" className="w-3 5" />
@@ -90,7 +92,7 @@ const Product = () => {
               onClick={() => {
                 scrollTo(0, 0), addToCart(productData._id, size);
               }}
-              className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700"
+              className="bg-green-600 hover:bg-green-500 text-white px-8 py-3 text-sm active:bg-gray-700"
             >
               ADD TO CART
             </button>
@@ -105,8 +107,12 @@ const Product = () => {
         {/* -------Description  and review ---------- */}
         <div className="mt-20 ">
           <div className="flex pb-3 ">
-            <b className="border  px-5 py-3 text-sm ">Description</b>
-            <p className="border  px-5 py-3 text-sm">Reviews (122)</p>
+            <b className="border  px-5 py-3 text-sm  text-orange-600">
+              Description
+            </b>
+            <p className="border  px-5 py-3 text-sm text-orange-600">
+              Reviews <span className="text-green-600">(122)</span>
+            </p>
           </div>
           <div className="flex flex-col gap-4 border px-6 py-4 text-sm text-green-700 ">
             <p className="">

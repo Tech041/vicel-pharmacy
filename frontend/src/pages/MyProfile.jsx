@@ -51,7 +51,7 @@ const MyProfile = () => {
 
   return (
     <Container>
-      <section className="border-t pt-16">
+      <section className="border-t pt-24">
         <SEO
           content="This is orders page of Nelpharma"
           title="My Profile Page"

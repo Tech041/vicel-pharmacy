@@ -108,7 +108,7 @@ const PlaceOrder = () => {
     <Container>
       <form
         onSubmit={onSubmitHandler}
-        className="flex  flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-4 min-h-[80vh] border-t "
+        className="flex  flex-col sm:flex-row justify-between gap-4 pt-24 min-h-[80vh] border-t "
       >
         <SEO
           content="This is place order page of Nelpharma"
@@ -217,7 +217,7 @@ const PlaceOrder = () => {
             <Title text1={"PAYMENT"} text2={"METHOD"} />
             {/* payment methods */}
             <div className="flex gap-3 flex-col lg:flex-row">
-              <div
+              {/* <div
                 onClick={() => setMethod("stripe")}
                 className="flex items-center border p-2 cursor-pointer"
               >
@@ -227,7 +227,7 @@ const PlaceOrder = () => {
                   }`}
                 ></p>
                 <img src={assets.stripe_logo} alt="" className="h-5 mx-4" />
-              </div>
+              </div> */}
               {/* <div
               onClick={() => setMethod("razorpay")}
               className="flex items-center border p-2 cursor-pointer"
@@ -257,7 +257,7 @@ const PlaceOrder = () => {
               <button
                 type="submit"
                 // onClick={() => navigate("/orders")}
-                className="bg-black text-white px-16 py-3 text-sm"
+                className="bg-green-600 hover:bg-green-500 text-white px-16 py-3 text-sm"
               >
                 PLACE ORDER
               </button>

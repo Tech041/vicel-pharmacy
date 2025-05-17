@@ -45,7 +45,7 @@ const Orders = () => {
 
   return (
     <Container>
-      <section className="border-t pt-16">
+      <section className="border-t pt-28">
         <SEO
           content="This is orders page of Nelpharma"
           title="Orders Page"

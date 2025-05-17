@@ -36,7 +36,7 @@ const Cart = () => {
   }, [cartItems, products]);
   return (
     <Container>
-      <section className="border-t pt-14">
+      <section className="border-t pt-28">
         <SEO
           content="This is Cart page of Nelpharma"
           title="Cart Page"
