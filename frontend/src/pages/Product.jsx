@@ -27,7 +27,7 @@ const Product = () => {
 
   return productData ? (
     <Container>
-      <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
+      <div className="border-t-2 pt-28 transition-opacity ease-in duration-500 opacity-100 ">
         <SEO
           content="This is place order page of Nelpharma"
           title="product Page"
@@ -54,7 +54,7 @@ const Product = () => {
           </div>
           {/* -------Product Info------------ */}
           <div className="flex-1">
-            <h1 className="font-medium text-2xl mt-2">{productData.name}</h1>
+            <h1 className="font-medium text-2xl mt-2 text-orange-700">{productData.name}</h1>
             <div className="flex items-center gap-1 mt-2">
               <img src={assets.star_icon} alt="" className="w-3 5" />
               <img src={assets.star_icon} alt="" className="w-3 5" />
@@ -71,7 +71,7 @@ const Product = () => {
               {productData.description}
             </p>
             <div className="flex flex-col gap-4 my-8">
-              <p className="">Pack Size</p>
+              <p className="text-red-500">Product Size</p>
               <div className="flex gap-2">
                 {productData.sizes.map((item, index) => (
                   <button
@@ -105,10 +105,10 @@ const Product = () => {
         {/* -------Description  and review ---------- */}
         <div className="mt-20 ">
           <div className="flex pb-3 ">
-            <b className="border  px-5 py-3 text-sm">Description</b>
+            <b className="border  px-5 py-3 text-sm ">Description</b>
             <p className="border  px-5 py-3 text-sm">Reviews (122)</p>
           </div>
-          <div className="flex flex-col gap-4 border px-6 py-4 text-sm text-gray-500 ">
+          <div className="flex flex-col gap-4 border px-6 py-4 text-sm text-green-700 ">
             <p className="">
               Vicel Pharmacy is a modern e-commerce platform designed to provide
               seamless access to pharmaceutical products and healthcare
@@ -116,7 +116,7 @@ const Product = () => {
               browse, purchase, and receive medications from the comfort of
               their homes.
             </p>
-            <p className="">
+            <p className="text-green-700">
               {" "}
               Vicel Pharmacy makes accessing medications easy with a seamless
               shopping experience, secure payments, and fast delivery. Your

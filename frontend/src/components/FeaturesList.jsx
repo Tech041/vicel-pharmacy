@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
+import Container from "./Container";
 // eslint-disable-next-line react/prop-types
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +9,10 @@ const AccordionItem = ({ title, content }) => {
   return (
     <div className="border border-gray-300 rounded-lg overflow-hidden mb-2">
       <button
-        className="w-full text-left p-4   text-black font-semibold"
+        className="w-full text-left p-4   text-slate-700 font-semibold"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {title}{" "}
+        {title}
         {isOpen ? (
           <FaChevronUp size={15} color="black" />
         ) : (
@@ -26,11 +27,11 @@ const AccordionItem = ({ title, content }) => {
 const FeatureList = () => {
   const items = [
     {
-      title: "What is address of Vicel Pharmacy ?",
+      title: "The address of Vicel Pharmacy?",
       content: "16 Odiyan Street,Lekki, Lagos State,Nigeria.",
     },
     {
-      title: "How can I contact Vicel Pharmacy",
+      title: "Their hotline Vicel Pharmacy",
       content: "+234706873027",
     },
     {
@@ -40,14 +41,22 @@ const FeatureList = () => {
   ];
 
   return (
-    <div className="w-full mx-auto text-black">
-      <h1 className="text-center text-xl text-gray-500 font-semibold py-2">
-        Frequently Asked Questions
-      </h1>
-      {items.map((item, index) => (
-        <AccordionItem key={index} title={item.title} content={item.content} />
-      ))}
-    </div>
+    <section className="">
+      <Container>
+        <div className="w-full mx-auto text-black">
+          <h1 className="text-center text-xl text-green-800 font-semibold py-2">
+            Frequently Asked Questions
+          </h1>
+          {items.map((item, index) => (
+            <AccordionItem
+              key={index}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
+        </div>
+      </Container>
+    </section>
   );
 };
 

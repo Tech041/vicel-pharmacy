@@ -6,22 +6,28 @@ import { FaFacebookF } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="border-t mt-5 border-gray-500 bg-black text-white ">
+    <footer className="border-t mt-5 bg-[url('/footer.png')] bg-cover text-white h-full ">
       <Container>
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center  gap-14 my-10 mt-40 text-sm">
           <div className="">
             <div className="">
-              <p className="text-xl font-medium mb-5  ">Customer Services</p>
-              <ul className="flex flex-col gap-1 ">
-                <li className="hover:cursor-pointer">FAQs</li>
-                <li className="hover:cursor-pointer">Return Policy</li>
-                <li className="hover:cursor-pointer">Our Stores</li>
-              </ul>
+              <p className="text-xl font-medium mb-5  text-orange-700 ">
+                Vicel Pharmacy
+              </p>
+              <a href="#home" className="">
+                <img
+                  src="/vicel_logo.jpg"
+                  alt=""
+                  width={50}
+                  height={50}
+                  className="w-[30px] h-[30px] rounded-full"
+                />
+              </a>
             </div>
           </div>
           <div className="">
             <p className="text-xl font-medium mb-5  ">COMPANY</p>
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col gap-1 ">
               <Link to={"/"} onClick={() => scrollTo(0, 0)}>
                 Home
               </Link>

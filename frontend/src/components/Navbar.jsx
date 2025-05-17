@@ -4,7 +4,9 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { BsCart4 } from "react-icons/bs";
 import Container from "./Container";
+import { GiHamburgerMenu } from "react-icons/gi";
 
+const hrStyle = "w-2/4 border-none h-[2px] bg-orange-500 hidden";
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [showIcon, setShowIcon] = useState(false);
@@ -32,40 +34,46 @@ const Navbar = () => {
     navigate("/login");
   };
   return (
-    <nav className="bg-gray-50">
+    <header className=" fixed py-2 h-auto w-full border-b border-gray-400  bg-green-700 z-40">
       <Container>
         <div className="flex items-center justify-between py-5 font-medium  ">
           <Link to="/" className="flex flex-col justify-center items-center">
-            <img src="/vicel_logo.jpg" alt="" className="w-10 h-10 " />
-            <span className="text-[8px] text-green-600">
+            <img
+              src="/vicel_logo.jpg"
+              alt=""
+              width={30}
+              height={30}
+              className="w-[30px] h-[30px] rounded-full"
+            />
+            <span className="text-[8px] text-white">
               Leading a healthy lifestyle.
             </span>
           </Link>
 
-          <ul className="hidden sm:flex gap-5 text-sm text-black font-extrabold">
+          <ul className="hidden sm:flex gap-5 text-sm text-white font-extrabold">
             <NavLink to="/" className="flex flex-col items-center gap-1">
               <p className="hover:text-green-400">HOME</p>
-              <hr className="w-2/4 border-none h-[2px] bg-green-500 hidden" />
+              <hr className={hrStyle} />
             </NavLink>
             <NavLink
               to="/collection"
               className="flex flex-col items-center gap-1"
             >
               <p className="hover:text-green-400">COLLECTION</p>
-              <hr className="w-2/4 border-none h-[2px] bg-green-500 hidden" />
+              <hr className={hrStyle} />
             </NavLink>{" "}
             <NavLink to="/about" className="flex flex-col items-center gap-1">
               <p className="hover:text-green-400">ABOUT</p>
-              <hr className="w-2/4 border-none h-[2px] bg-green-500 hidden" />
+              <hr className={hrStyle} />
             </NavLink>{" "}
             <NavLink to="/contact" className="flex flex-col items-center gap-1">
               <p className="hover:text-green-400">CONTACT</p>
-              <hr className="w-2/4 border-none h-[2px] bg-green-500 hidden " />
+              <hr className={hrStyle} />
             </NavLink>
             <a
               href="https://vicel-pharmacy-admin.vercel.app"
               target="_blank"
-              className="text-blue-500 px-6"
+              className="text-orange-500 px-6"
             >
               Admin
             </a>
@@ -79,13 +87,13 @@ const Navbar = () => {
                 className="w-5 cursor-pointer"
               />
             )}
-            <div className="group relative">
+            <div className="group relative bg-white p-3 rounded-full">
               <span className="flex items-center justify-center gap-2">
                 <img
                   onClick={() => (token ? null : navigate("/login"))}
                   src={assets.profile_icon}
                   alt=""
-                  className="w-5 cursor-pointer"
+                  className="w-4 cursor-pointer"
                 />
               </span>
               {/* Dropdown menu */}
@@ -121,17 +129,17 @@ const Navbar = () => {
                 {getCartCount()}
               </p>
             </Link>
-            <img
+            <span
               onClick={() => setVisible(true)}
-              src={assets.menu_icon}
-              alt=""
               className="w-5 cursor-pointer sm:hidden"
-            />
+            >
+              <GiHamburgerMenu color="white" size={20} />
+            </span>
           </div>
           {/* Sidebar menu for smaller screen */}
           <div
-            className={` sm:hidden absolute top-0 bottom-0 right-0 overflow-hidden bg-white transition-all z-50 ${
-              visible ? "w-full" : "w-0"
+            className={` sm:hidden absolute top-0 bottom-0 w-full  overflow-hidden h-screen bg-white  transition- ease-in-out duration-700 z-50 ${
+              visible ? "right-0" : "right-[-100%]"
             }`}
           >
             <div className="flex flex-col text-gray-600">
@@ -144,7 +152,7 @@ const Navbar = () => {
                   src={assets.dropdown_icon}
                   alt=""
                 />
-                <p className="">Back</p>
+                <p className="text-red-500">Back</p>
               </div>
               <NavLink
                 onClick={() => setVisible(false)}
@@ -205,7 +213,7 @@ const Navbar = () => {
           </div>
         </div>
       </Container>
-    </nav>
+    </header>
   );
 };
 

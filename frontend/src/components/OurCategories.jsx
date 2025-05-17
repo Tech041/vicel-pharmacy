@@ -2,6 +2,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import Banner from "./Banner";
 import { useEffect } from "react";
 import { useState } from "react";
+import Container from "./Container";
 
 const slides = [
   {
@@ -116,59 +117,63 @@ const OurCategories = () => {
   };
 
   return (
-    <div className="mt-5 ">
-      <h1 className="text-center text-base lg:text-xl font-bold text-orange-600">
-        Our Product Categories
-      </h1>
-      <div className="relative w-full h-[300px] lg:h-[500px] xl:h-[700px] overflow-hidden">
-        {/* Slides */}
-        <div
-          className={`flex ${transition} w-full`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {slides.map((slide) => (
-            <div key={slide.id} className=" w-full flex-shrink-0">
-              <Banner
-                caption={slide.caption}
-                src={slide.src}
-                className={slide.className}
-              />
+    <section>
+      <Container>
+        <div className="mt-5 ">
+          <h1 className="text-center text-base lg:text-xl font-bold text-orange-600">
+            Our Product Categories
+          </h1>
+          <div className="relative w-full h-[300px] lg:h-[500px] xl:h-[700px] overflow-hidden">
+            {/* Slides */}
+            <div
+              className={`flex ${transition} w-full`}
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {slides.map((slide) => (
+                <div key={slide.id} className=" w-full flex-shrink-0">
+                  <Banner
+                    caption={slide.caption}
+                    src={slide.src}
+                    className={slide.className}
+                  />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        {/* Left Arrow */}
-        <button
-          className="absolute top-1/2 left-[-10px] bg-white text-green p-2 rounded-full"
-          onClick={() =>
-            goToSlide((currentIndex - 1 + slides.length) % slides.length)
-          }
-        >
-          <FaChevronLeft size={20} color=" black" />
-        </button>
-
-        {/* Right Arrow */}
-        <button
-          className="absolute top-1/2 right-[-5px] bg-white text-green p-2 rounded-full"
-          onClick={() => goToSlide((currentIndex + 1) % slides.length)}
-        >
-          <FaChevronRight size={20} color="black" />
-        </button>
-
-        {/* Dot Indicators */}
-        <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2">
-          {slides.map((_, index) => (
+            {/* Left Arrow */}
             <button
-              key={index}
-              className={`w-3 h-3 rounded-full ${
-                currentIndex === index ? "bg-black" : "bg-gray-300"
-              }`}
-              onClick={() => goToSlide(index)}
-            />
-          ))}
+              className="absolute top-1/2 left-[-10px] bg-white text-green p-2 rounded-full"
+              onClick={() =>
+                goToSlide((currentIndex - 1 + slides.length) % slides.length)
+              }
+            >
+              <FaChevronLeft size={20} color=" black" />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              className="absolute top-1/2 right-[-5px] bg-white text-green p-2 rounded-full"
+              onClick={() => goToSlide((currentIndex + 1) % slides.length)}
+            >
+              <FaChevronRight size={20} color="black" />
+            </button>
+
+            {/* Dot Indicators */}
+            <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full ${
+                    currentIndex === index ? "bg-black" : "bg-gray-300"
+                  }`}
+                  onClick={() => goToSlide(index)}
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 };
 
