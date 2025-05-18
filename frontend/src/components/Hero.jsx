@@ -11,10 +11,10 @@ const Hero = () => {
           {/* left */}
           <div className="flex-1 ">
             <div className="w-full h-full text-white">
-              <h1 className="text-2xl  md:text-4xl lg:text-5xl font-extrabold text-center md:text-start">
+              <h1 className="text-2xl  md:text-4xl lg:text-5xl font-extrabold text-center md:text-start ">
                 Welcome to Vicel Pharmacy
               </h1>
-              <h3 className="text-sm md:text-lg pt-3 font-semibold text-center md:text-start">
+              <h3 className="text-sm md:text-lg pt-3 font-semibold text-center md:text-start text-orange-700">
                 Your health is our priority
               </h3>
             </div>
