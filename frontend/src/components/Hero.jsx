@@ -7,16 +7,16 @@ const Hero = () => {
       id="home"
     >
       <Container>
-        <div className="flex flex-col md:flex-row items-center h- gap-6 w-full mt-5 pt-10 ">
+        <div className="flex flex-col md:flex-row items-center h-full gap-10 md:gap-6 w-full mt-5 pt-10 ">
           {/* left */}
           <div className="flex-1 ">
             <div className="w-full h-full text-white">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-center md:text-start">
+              <h1 className="text-2xl  md:text-4xl lg:text-5xl font-extrabold text-center md:text-start">
                 Welcome to Vicel Pharmacy
               </h1>
-              {/* <h3 className="text-sm md:text-lg font-semibold text-center md:text-start">
+              <h3 className="text-sm md:text-lg pt-3 font-semibold text-center md:text-start">
                 Your health is our priority
-              </h3> */}
+              </h3>
             </div>
             <div className="pt-4">
               {/* <h1 className="text-center md:text-start text-white">
