@@ -40,7 +40,7 @@ const NewsletterBox = () => {
       <Container>
         <div className="text-center mt-4 pt-3">
           <p className="text-2xl font-medium text-orange-700">
-            Subscribe now and get 20% off
+            Email subscription
           </p>
           <p className="text-gray-400 mt-3">
             Health updates, delivered to your inbox

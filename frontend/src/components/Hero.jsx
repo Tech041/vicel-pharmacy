@@ -14,15 +14,15 @@ const Hero = () => {
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-center md:text-start">
                 Welcome to Vicel Pharmacy
               </h1>
-              <h3 className="text-sm md:text-lg font-semibold text-center md:text-start">
+              {/* <h3 className="text-sm md:text-lg font-semibold text-center md:text-start">
                 Your health is our priority
-              </h3>
+              </h3> */}
             </div>
             <div className="pt-4">
-              <h1 className="text-center md:text-start text-white">
+              {/* <h1 className="text-center md:text-start text-white">
                 Providing high quality medications at unbeatable prices is all
                 we care for.
-              </h1>
+              </h1> */}
             </div>
           </div>
           {/* right */}

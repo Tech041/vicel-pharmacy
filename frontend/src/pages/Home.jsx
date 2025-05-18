@@ -4,7 +4,7 @@ import NewsletterBox from "../components/NewsletterBox";
 import SEO from "../components/SEO";
 
 import OurCategories from "../components/OurCategories";
-import FeatureList from "../components/FeaturesList";
+
 
 import Hero from "../components/Hero";
 
@@ -16,7 +16,7 @@ const Home = () => {
       <OurCategories />
       <LatestCollection />
       <BestSeller />
-      <FeatureList />
+      {/* <FeatureList /> */}
       <NewsletterBox />
     </main>
   );
