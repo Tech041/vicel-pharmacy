@@ -1,4 +1,4 @@
-Nelpharma E-commerce App
+Vicel Pharmacy E-commerce App
 
 A full-stack e-commerce application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack, designed for selling pharmaceutical products.
 
@@ -36,7 +36,3 @@ API Endpoints
 - /api/auth/login: Login endpoint
 - /api/auth/register: Register endpoint
 
-  Getting Started
-1. Clone the repository: git clone https://github.com/your-repo/pharma-ecommerce-app.git
-2. Install dependencies: npm install
-3. Start the application: npm run dev
