@@ -1,3 +1,4 @@
+version: "1"
 services:
   - name: my-react-app
     type: web
@@ -8,3 +9,7 @@ services:
     startCommand: serve -s build
     publishPath: build
     plan: free
+    routes:
+      - source: "/*"
+        destination: "/index.html"
+        status: 200
