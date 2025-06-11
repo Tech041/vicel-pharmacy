@@ -86,8 +86,9 @@ const PlaceOrder = () => {
             orderData,
             { headers: { token } }
           );
-          console.log(responseStripe.data);
+
           if (responseStripe.data.success) {
+            setCartItems({});
             const { session_url } = responseStripe.data;
             window.location.replace(session_url);
           } else {

@@ -1,10 +1,10 @@
 import { useContext, useEffect } from "react";
 import { ShopContext } from "../context/ShopContext";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const FinalStep = () => {
+const Verify = () => {
   const { navigate, token, setCartItems, backendUrl } = useContext(ShopContext);
   // eslint-disable-next-line no-unused-vars
   const [searchParams, setSearchParams] = useSearchParams();
@@ -22,7 +22,6 @@ const FinalStep = () => {
         { headers: { token } }
       );
       if (response.data.success) {
-        navigate("/orders");
         setCartItems({});
       } else {
         navigate("/cart");
@@ -35,7 +34,21 @@ const FinalStep = () => {
   useEffect(() => {
     verifyPayment();
   }, [token]);
-  return <div>Final Step</div>;
+  return (
+    <div className=" h-screen w-full flex flex-col  items-center justify-center gap-4">
+      <h1 className="text-green-500 text-3xl font-bold">
+        Order placed Successfully
+      </h1>
+      <div className=" flex justify-center items-center my-4">
+        <Link
+          to={"/orders"}
+          className="bg-orange-600 text-white px-4 py-1 rounded-lg"
+        >
+          My orders
+        </Link>
+      </div>
+    </div>
+  );
 };
 
-export default FinalStep;
+export default Verify;

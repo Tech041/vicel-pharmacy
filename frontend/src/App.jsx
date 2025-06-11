@@ -13,9 +13,8 @@ import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import FinalStep from "./pages/FinalStep";
 import MyProfile from "./pages/MyProfile";
-
+import Verify from "./pages/Verify";
 
 const App = () => {
   return (
@@ -35,7 +34,7 @@ const App = () => {
         <Route path="/orders" element={<Orders />} />
         <Route path="/user-profile" element={<MyProfile />} />
 
-        <Route path="/final" element={<FinalStep />} />
+        <Route path="/verify" element={<Verify />} />
       </Routes>
       <Footer />
     </div>
