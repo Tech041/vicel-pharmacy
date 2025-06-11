@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+// eslint-disable-next-line react/prop-types
 const SEO = ({ content, title, route }) => {
   return (
     <div>
