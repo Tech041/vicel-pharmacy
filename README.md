@@ -4,11 +4,13 @@ A full-stack e-commerce application built using the MERN (MongoDB, Express.js, R
 
 Features
 Admin Dashboard
+
 - Add, edit, and remove products
 - Track orders and update order status
 - Manage user accounts and orders
 
 Frontend
+
 - Product filtering and search
 - Shopping cart functionality
 - Order tracking and management
@@ -16,23 +18,20 @@ Frontend
 - Authentication using JSON Web Tokens (JWT)
 
 Technologies Used
-- Frontend: React.js
-- Backend: Node.js, Express.js
+
+- Frontend: React.js,Tailwind CSS
+- Backend: Node.js, Express.js, Cloudinary
 - Database: MongoDB
 - Authentication: JSON Web Tokens (JWT)
-Technologies Used
-- Frontend: React.js
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Authentication: JSON Web Tokens (JWT)
-
-
 
 API Endpoints
-- /api/products: Get all products
-- /api/products/:id: Get product by ID
-- /api/orders: Get all orders
-- /api/orders/:id: Get order by ID
-- /api/auth/login: Login endpoint
-- /api/auth/register: Register endpoint
 
+- /api/product
+- /api/order
+- /api/cart
+- /api/user
+- /api/news-letter
+
+Clone the repo via git@github.com:Tech041/vicel-pharmacy.git
+Create .env file at root directory of each folder(frontend and backend) and add all the variables
+For Frontend, run npm install and then npm run dev to start the React app. On the backend, run npm install and npm run server to start the express server.
